@@ -4,13 +4,16 @@
 ## Note that not every square matrix has an inverse (e.g., matrix(rep(0, 2*2), 2, 2) does not have an inverse matrix).
 ## This script assumes that the given matrix A is a square matrix and that A has an inverse matrix.
 ## 
+## The script contains two functions, makeCacheMatrix and cacheSolve.
+## The function makeCacheMatrix creates a new object for caching a matrix and its inverse matrix.
+## The function cacheSolve returns the inverse matrix of a matrix created with makeCacheMatrix. It either returns the cached value or it computes the inverse matrix if the cache is empty or not up to date.
+## The code for the functions is highly inspired by the given example in https://github.com/rdpeng/ProgrammingAssignment2/blob/master/README.md.
 ## 
-## 
-## In order to test the script, it is usually sufficient to create a square matrix whose entries are filled by random variables. This works due to the following statement taken from wikipedia.org:
+## In order to test the functions of this script, it is usually sufficient to create a square matrix whose entries are filled by random variables. This works due to the following statement taken from wikipedia.org:
 ## "A square matrix that is not invertible is called singular or degenerate. A square matrix is singular if and only if its determinant is 0. Singular matrices are rare in the sense that a square matrix randomly selected from a continuous uniform distribution on its entries will almost never be singular." [https://en.wikipedia.org/wiki/Invertible_matrix]
-
-
-
+##
+##
+##
 
 
 ## Write a short comment describing this function

@@ -80,7 +80,6 @@ cacheSolve <- function(x, ...) {
         ## x = a matrix created with makeCacheMatrix
         minv <- x$getInv()
         if (is.null(minv)) {
-                print("compute")
                 # not cached so compute
                 minv <- solve(x$getMatrix(), ...)
                 # now we have to cache the matrix
